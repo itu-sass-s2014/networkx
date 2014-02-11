@@ -11,4 +11,14 @@ class TestMinDegree:
     def test_random_graph(self):
     	print "test random graph"
 
-    	nx.min_degree()
+    	G = nx.Graph()
+
+    	G.add_node(11)
+    	G.add_node(12)
+    	G.add_node(13)
+
+    	G.add_edge(11,12)
+    	G.add_edge(11,13)
+    	# G.add_edge(2,3)
+
+    	nx.min_degree(G)
