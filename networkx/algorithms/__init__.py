@@ -4,6 +4,7 @@ from networkx.algorithms.boundary import *
 from networkx.algorithms.centrality import *
 from networkx.algorithms.cluster import *
 from networkx.algorithms.clique import *
+from networkx.algorithms.coloring import *
 from networkx.algorithms.community import *
 from networkx.algorithms.components import *
 from networkx.algorithms.connectivity import *
@@ -33,12 +34,12 @@ from networkx.algorithms.graphical import *
 from networkx.algorithms.simple_paths import *
 from networkx.algorithms.tree import *
 
-
 import networkx.algorithms.assortativity
 import networkx.algorithms.bipartite
 import networkx.algorithms.centrality
 import networkx.algorithms.cluster
 import networkx.algorithms.clique
+import networkx.algorithms.coloring 
 import networkx.algorithms.components
 import networkx.algorithms.connectivity
 import networkx.algorithms.flow
