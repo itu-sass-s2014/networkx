@@ -11,6 +11,7 @@ __all__ = ['min_degree']
 
 def min_degree(G):
 	""" Takes the nodes with minimum degree first, and assigns those a color.
+	To reverse the algorith, so that it will take nodes with maximum degree first, simply apply *-1 to the priority of the heapqueue (based on degree)
 	"""
 
 	# G
@@ -25,7 +26,7 @@ def min_degree(G):
 	assigned = dict()
 
 	for n in G.nodes():
-		heappush(queue, (len(G.neighbors(n)), n))
+		heappush(queue, (len(G.neighbors(n) * -1), n))
 
 	while len(queue):
 		(priority, node) = heappop(queue) # node with least degree
@@ -45,5 +46,8 @@ def min_degree(G):
 				color = i
 
 		assigned[node] = color
+
+	print assigned
+	asd()
 
 	return assigned
